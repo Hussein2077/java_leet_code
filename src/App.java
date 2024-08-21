@@ -3,10 +3,10 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
      
-       TwoSum twoSum = new TwoSum();
+       ThreeSum  threeSum = new  ThreeSum();
       
         
-       System.out.println(twoSum.twoSum(new int[]{2,7,11,15}, 19)+"hhh");
+     System.err.println(threeSum.threeSum(new int[]{-1,0,1,2,-1,-4}));
 
     }
 
