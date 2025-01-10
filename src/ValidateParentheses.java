@@ -13,7 +13,6 @@ public class ValidateParentheses {
 // <<<<<<<  3bc145e8-c0d7-4109-9454-588d38e7c58e  >>>>>>>
     public boolean isValid(String s) {
         
-        Stack<Character> stack = new Stack<>();
         Map<Character,Character> map = new HashMap<>();
 
         map.put('(',')');
