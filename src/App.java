@@ -1,11 +1,16 @@
 import java.util.*;
 
+import arrays.ValidAnagram;
+
 public class App {
     public static void main(String[] args) throws Exception {
      
-       ValidateParentheses  threeSum = new  ValidateParentheses();
+       ValidAnagram   validAnagram = new   ValidAnagram();
 
-        System.err.println(threeSum.isValid("()"));
+        System.out.println(validAnagram.isAnagram( "z","z"));
+// String s = "a man, a plan, a canal: Panama";
+// s.charAt(0);
+//         System.out.println( s.charAt(0)-'a');
         
 
     }
@@ -13,29 +18,7 @@ public class App {
 }
 
 class Solution {
-    public boolean isAnagram(String s, String t) {
-        if (s.length() != t.length())
-            return false;
-        // char[] charArray = s.toCharArray();
-        // char[] charArray2 = t.toCharArray();
-
-        // Arrays.sort(charArray);
-        // Arrays.sort(charArray2);
-        // for(int i=0;i<charArray.length;i++){
-        // if(charArray[i]!=charArray2[i]){
-        // return false;
-        // }
-
-        // }
-        Map<Character, Integer> charCount = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
-        }
-        return true;
-
-    }
-
+    
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, Integer> mp = new HashMap<>();
         List<List<String>> ans = new ArrayList<>();
